@@ -15,25 +15,25 @@ export default function Home() {
           <Header cartDisplayName="My Cart" imageUrl={["/image1", "image2"]} />
         </div>
         <div className="banner-one">
-          <Banner />
+          <Banner src="/homepage-banner.jpg" />
         </div>
         <div className="collection">
-          <Collection />
+          <Collection collectionUrls={["A.png", "B.png"]} />
         </div>
         <div className="banner-two">
-          <Banner />
+          <Banner src="/1.png" />
         </div>
         <div className="collection-two">
-          <Collection />
+          <Collection collectionUrls={["C.png", "D.png"]} />
         </div>
         <div className="banner-three">
-          <Banner />
+          <Banner src="/2.png" />
         </div>
         <div className="collection-three">
-          <Collection />
+          <Collection collectionUrls={["E.png", "F.png"]} />
         </div>
         <div className="banner-four">
-          <Banner />
+          <Banner src="/3.png" />
         </div>
         <div className="shop-new">
           <ShopNew />

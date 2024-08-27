@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import styles from './Collection.module.scss';
-import CollectionSection from './CollectionSection';
+import Image from "next/image";
+import styles from "./Collection.module.scss";
+import CollectionSection from "./CollectionSection";
 
-function Collection() {
+function Collection({ collectionUrls }) {
   return (
     <div className={styles.collectionContainer}>
       <div className={styles.collectionHeadingContainer}>
@@ -10,8 +10,9 @@ function Collection() {
         <p>Collection</p>
       </div>
       <div className={styles.collectionItems}>
-        <CollectionSection />
-        <CollectionSection />
+        {collectionUrls.map((url) => (
+          <CollectionSection key={url} src={url} />
+        ))}
       </div>
     </div>
   );

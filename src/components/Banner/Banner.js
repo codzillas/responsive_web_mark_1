@@ -2,7 +2,7 @@ import styles from "./Bannerone.module.scss";
 import Image from "next/image";
 
 function Banner(props) {
-  const { style } = props;
+  const { style, src } = props;
   if (style === "style1") {
     return <div>Style 1</div>;
   }
@@ -10,7 +10,7 @@ function Banner(props) {
     <div className={styles.bannerContainer}>
       <Image
         className={styles.mainBannerImage}
-        src="/homepage-banner.jpg"
+        src={src}
         // width="100"
         // height="100"
         layout="fill"
