@@ -1,17 +1,17 @@
-import styles from "./Bannerone.module.scss";
-import Image from "next/image";
+import styles from './Bannerone.module.scss';
+import Image from 'next/image';
 
-function BannerOne() {
+function Banner() {
   return (
     <div className={styles.bannerContainer}>
       <Image
         className={styles.mainBannerImage}
-        src="/homepage-banner.jpg"
+        src='/homepage-banner.jpg'
         // width="100"
         // height="100"
-        layout="fill"
-        objectFit="cover"
-        alt="main-banner"
+        layout='fill'
+        objectFit='cover'
+        alt='main-banner'
       />
       <div className={styles.text1}>
         <p>50 % OFF SITEWIDE</p>
@@ -20,4 +20,4 @@ function BannerOne() {
   );
 }
 
-export default BannerOne;
+export default Banner;

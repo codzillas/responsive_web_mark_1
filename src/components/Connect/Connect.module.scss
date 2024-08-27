@@ -1,0 +1,17 @@
+.connectWith {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.socialMedias {
+  display: flex;
+  justify-content: space-around;
+}
+.followItems {
+  display: flex;
+  justify-content: space-around;
+  .followItem {
+    width: 10rem;
+    height: 10rem;
+  }
+}
