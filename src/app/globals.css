@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 /* 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -33,7 +35,7 @@
 } */
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: raleway;
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
@@ -120,35 +122,32 @@ nav a {
   grid-area: footer;
 }
 
-
-
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   grid-template-areas:
-    'header header header header header header'
-    'bannerOne bannerOne bannerOne bannerOne bannerOne bannerOne'
-    'collection collection collection collection collection collection'
-    'bannerTwo bannerTwo bannerTwo bannerTwo bannerTwo bannerTwo'
-    'collectionTwo collectionTwo collectionTwo collectionTwo collectionTwo collectionTwo'
-    'bannerThree bannerThree bannerThree bannerThree bannerThree bannerThree'
-    'collectionThree collectionThree collectionThree collectionThree collectionThree collectionThree'
-    'bannerFour bannerFour bannerFour bannerFour bannerFour bannerFour'
-    'collectionFour collectionFour collectionFour collectionFour collectionFour collectionFour'
-    'shopNew shopNew shopNew shopNew shopNew shopNew'
-    'connect connect connect connect connect connect'
-    'follow follow follow follow follow follow'
-    'about about about about about about'
-    'footer footer footer footer footer footer'
-    ;
-  gap: 10px;
-  background-color: #2196F3;
-  padding: 10px;
+    "header header header header header header"
+    "bannerOne bannerOne bannerOne bannerOne bannerOne bannerOne"
+    "collection collection collection collection collection collection"
+    "bannerTwo bannerTwo bannerTwo bannerTwo bannerTwo bannerTwo"
+    "collectionTwo collectionTwo collectionTwo collectionTwo collectionTwo collectionTwo"
+    "bannerThree bannerThree bannerThree bannerThree bannerThree bannerThree"
+    "collectionThree collectionThree collectionThree collectionThree collectionThree collectionThree"
+    "bannerFour bannerFour bannerFour bannerFour bannerFour bannerFour"
+    "collectionFour collectionFour collectionFour collectionFour collectionFour collectionFour"
+    "shopNew shopNew shopNew shopNew shopNew shopNew"
+    "connect connect connect connect connect connect"
+    "follow follow follow follow follow follow"
+    "about about about about about about"
+    "footer footer footer footer footer footer";
+  /* gap: 10px; */
+  /* background-color: #2196F3; */
+  /* padding: 10px; */
 }
 
-.grid-container>div {
+.grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 20px 0;
+  /* padding: 20px 0; */
   font-size: 30px;
 }

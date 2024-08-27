@@ -1,10 +1,11 @@
 import Image from "next/image";
 import styles from "./Header.module.scss";
 
-function Header() {
+function Header(props) {
+  const { cartDisplayName } = props;
   return (
-    <header className="header">
-      <Image src="/logo.svg" width="100" height="100" alt="dressmart" />
+    <header className={styles.header}>
+      <Image className={styles.siteLogo} src="/logo.svg" width="100" height="100" alt="dressmart" />
       <nav className={styles.nav}>
         <a href="#">New</a>
         <a href="#">Dresses</a>
@@ -38,9 +39,10 @@ function Header() {
         <a href="#">Log In</a>
       </div>
       <div id="signup">
-        <a href="#">My Cart</a>
+        <a href="#">{cartDisplayName}</a>
       </div>
     </header>
+    
   );
 }
 

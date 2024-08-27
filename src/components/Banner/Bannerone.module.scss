@@ -1,0 +1,17 @@
+.bannerContainer{
+width: 100%;
+height: 90vh;
+position: relative;
+.mainBannerImage{
+    width: inherit;
+    height: inherit;
+}
+.text1 {
+        position: absolute;
+        top: 15%;
+        left: 45%;
+        font-size: 24px;
+        color: white;
+        font-weight: bold;
+    }
+}
