@@ -5,25 +5,23 @@ function Header(props) {
   const { cartDisplayName } = props;
   return (
     <header className={styles.header}>
-      <img
-        className={styles.siteLogo}
-        src="/logo.svg"
-        alt="dressmart"
-      />
+      <div className={styles.siteLogoContainer}>
+        <img className={styles.siteLogo} src="/logo.svg" alt="dressmart" />
+      </div>
       <div className={styles.navContainer}>
         <nav className={styles.nav}>
-          <a href="#">New</a>
-          <a href="#">Dresses</a>
-          <a href="#">Clothing</a>
-          <a href="#">Accessories</a>
-          <a href="#">Sale</a>
+          <a>New</a>
+          <a>Dresses</a>
+          <a>Clothing</a>
+          <a>Accessories</a>
+          <a>Sale</a>
         </nav>
       </div>
       <div className={styles.headerButtons}>
-        <div id="login">
+        <div className={styles.login}>
           <a href="#">Log In</a>
         </div>
-        <div id="mycart">
+        <div className={styles.mycart}>
           <a href="#">My Cart</a>
         </div>
       </div>

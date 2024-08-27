@@ -1,38 +1,49 @@
-.header{
+.header {
   height: 60px;
   width: 100vw;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 50px;
+  align-items: baseline;
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #3c3c3c;
   color: #fff;
-  align-items: baseline;
   box-sizing: border-box;
   padding-right: 10px;
   padding-left: 10px;
-  .siteLogo{
-    width: 149px;
-    height: 30px;
-    flex: 1;
-    align-self: flex-start;
+  .siteLogoContainer {
+    height: 100%;
+    width: 20%;
+    align-items: center;
+    display: flex;
+    padding-left: 10%;
   }
-    .navContainer{
-      width: 500px;
-      flex: 1;
-      justify-content: center; // Centers the navigation items
-        align-self: center;
+  .navContainer {
+    width: 50%;
+    justify-content: center;
+    align-self: center;
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+    .nav {
+      display: flex;
+      font-size: 20px;
+      justify-content: space-between;
     }
-.nav {
-  display: flex;
-    font-size: 20px;
-    justify-content: space-between;
   }
-.headerButtons{
-  flex: 1;
-  font-size: 18px;
-  display: flex;
-  justify-content: flex-end;
-  align-self: flex-end;
-}
+  .headerButtons {
+    // flex: 1;
+    width: 30%;
+    font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+    // align-self: flex-end;
+    box-sizing: border-box;
+    align-self: center;
+    .login {
+      margin-right: 20px;
+    }
+    .mycart {
+      margin-right: 30px;
+    }
+  }
 }

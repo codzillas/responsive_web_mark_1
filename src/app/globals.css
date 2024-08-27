@@ -3,11 +3,20 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-
 body {
   font-family: raleway;
   font-weight: lighter;
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
+}
+
+.siteLogo {
+  width: 149px;
+  height: 30px;
+}
+
+p {
+  color: white;
+  text-align: center;
 }
