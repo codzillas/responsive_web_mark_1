@@ -1,14 +1,19 @@
-import Image from "next/image";
+import Image from 'next/image';
+import styles from './Collection.module.scss';
+import CollectionSection from './CollectionSection';
 
-function Collection({ src }) {
+function Collection() {
   return (
-    <Image
-      src={src}
-      width="400"
-      height="400"
-      alt="alt"
-      style={{ height: "400px" }}
-    />
+    <div className={styles.collectionContainer}>
+      <div className={styles.collectionHeadingContainer}>
+        <p>Featured</p>
+        <p>Collection</p>
+      </div>
+      <div className={styles.collectionItems}>
+        <CollectionSection />
+        <CollectionSection />
+      </div>
+    </div>
   );
 }
 

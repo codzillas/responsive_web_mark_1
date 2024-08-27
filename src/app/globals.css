@@ -3,36 +3,6 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
-
-/* body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-} */
-
-/* @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
 
 body {
   font-family: raleway;
@@ -72,82 +42,4 @@ nav a {
   background-color: #6c6c6c;
   padding: 5px 10px;
   border-radius: 5px;
-}
-
-.header {
-  grid-area: header;
-}
-
-.banner-one {
-  grid-area: bannerOne;
-}
-
-.banner-two {
-  grid-area: bannerTwo;
-}
-
-.banner-three {
-  grid-area: bannerThree;
-}
-.banner-four {
-  grid-area: bannerFour;
-}
-
-.collection {
-  grid-area: collection;
-}
-.collection-two {
-  grid-area: collectionTwo;
-}
-.collection-three {
-  grid-area: collectionThree;
-}
-.collection-four {
-  grid-area: collectionFour;
-}
-
-.shop-new {
-  grid-area: shopNew;
-}
-.connect {
-  grid-area: connect;
-}
-.follow {
-  grid-area: follow;
-}
-.about {
-  grid-area: about;
-}
-.footer {
-  grid-area: footer;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto auto auto;
-  grid-template-areas:
-    "header header header header header header"
-    "bannerOne bannerOne bannerOne bannerOne bannerOne bannerOne"
-    "collection collection collection collection collection collection"
-    "bannerTwo bannerTwo bannerTwo bannerTwo bannerTwo bannerTwo"
-    "collectionTwo collectionTwo collectionTwo collectionTwo collectionTwo collectionTwo"
-    "bannerThree bannerThree bannerThree bannerThree bannerThree bannerThree"
-    "collectionThree collectionThree collectionThree collectionThree collectionThree collectionThree"
-    "bannerFour bannerFour bannerFour bannerFour bannerFour bannerFour"
-    "collectionFour collectionFour collectionFour collectionFour collectionFour collectionFour"
-    "shopNew shopNew shopNew shopNew shopNew shopNew"
-    "connect connect connect connect connect connect"
-    "follow follow follow follow follow follow"
-    "about about about about about about"
-    "footer footer footer footer footer footer";
-  /* gap: 10px; */
-  /* background-color: #2196F3; */
-  /* padding: 10px; */
-}
-
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 0.8);
-  text-align: center;
-  /* padding: 20px 0; */
-  font-size: 30px;
 }

@@ -1,0 +1,21 @@
+.collectionContainer {
+  background-color: gray;
+  width: 100%;
+
+  .collectionHeadingContainer {
+    margin-left: 7%;
+    padding: 14px 0px;
+    font-size: 20px;
+  }
+  .collectionItems {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
+    .collectionItem {
+      background-color: orange;
+      width: 35rem;
+      height: 85vh;
+      margin-bottom: 2rem;
+    }
+  }
+}
