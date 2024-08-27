@@ -1,13 +1,38 @@
 .header{
   height: 60px;
   width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  background-color: #3c3c3c;
+  color: #fff;
+  align-items: baseline;
+  box-sizing: border-box;
+  padding-right: 10px;
+  padding-left: 10px;
   .siteLogo{
-    
+    width: 149px;
+    height: 30px;
+    flex: 1;
+    align-self: flex-start;
   }
+    .navContainer{
+      width: 500px;
+      flex: 1;
+      justify-content: center; // Centers the navigation items
+        align-self: center;
+    }
 .nav {
-    font-size: 18px;
-    display: flex;
-    justify-content: space-around;
-    flex: 2;
+  display: flex;
+    font-size: 20px;
+    justify-content: space-between;
   }
+.headerButtons{
+  flex: 1;
+  font-size: 18px;
+  display: flex;
+  justify-content: flex-end;
+  align-self: flex-end;
+}
 }
