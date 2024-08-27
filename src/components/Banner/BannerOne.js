@@ -1,14 +1,21 @@
+import styles from "./Bannerone.module.scss";
 import Image from "next/image";
 
-function BannerOne({ src }) {
+function BannerOne() {
   return (
-    <div className="banner-one bg-red-100">
-      <img
-        src="/home-banner.svg"
-        height="100"
-        style={{ width: "100%" }}
-        alt="alt"
+    <div className={styles.bannerContainer}>
+      <Image
+        className={styles.mainBannerImage}
+        src="/homepage-banner.jpg"
+        // width="100"
+        // height="100"
+        layout="fill"
+        objectFit="cover"
+        alt="main-banner"
       />
+      <div className={styles.text1}>
+        <p>50 % OFF SITEWIDE</p>
+      </div>
     </div>
   );
 }

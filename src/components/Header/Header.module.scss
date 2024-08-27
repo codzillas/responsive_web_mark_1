@@ -1,6 +1,13 @@
+.header{
+  height: 60px;
+  width: 100vw;
+  .siteLogo{
+    
+  }
 .nav {
-  font-size: 18px;
-  display: flex;
-  justify-content: space-around;
-  flex: 2;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    flex: 2;
+  }
 }
