@@ -3,43 +3,20 @@
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
-
 body {
   font-family: raleway;
+  font-weight: lighter;
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 50px;
-  background-color: #3c3c3c;
-  color: #fff;
+.siteLogo {
+  width: 149px;
+  height: 30px;
 }
 
-nav a {
-  color: #fff;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-#cart {
-  background-color: #6c6c6c;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-#login {
-  background-color: #3c3c3c;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-#signup {
-  background-color: #6c6c6c;
-  padding: 5px 10px;
-  border-radius: 5px;
+p {
+  color: white;
+  text-align: center;
 }

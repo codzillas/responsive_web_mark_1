@@ -1,4 +1,4 @@
-import styles from './Connect.module.scss';
+import styles from "./Connect.module.scss";
 function Connect() {
   return (
     <div>
@@ -8,22 +8,22 @@ function Connect() {
         <p>Facebook</p>
         <p>blog</p>
       </div>
-      <div style={{ backgroundColor: 'gray' }}>
+      <div style={{ backgroundColor: "gray" }}>
         <p className={styles.connectWith}>Follow us on instagram</p>
         <div className={styles.followItems}>
-          <img src='collection-1.png' className={styles.followItem} />
-          <img src='collection-1.png' className={styles.followItem} />
-          <img src='collection-1.png' className={styles.followItem} />
-          <img src='collection-1.png' className={styles.followItem} />
-          <img src='collection-1.png' className={styles.followItem} />
+          <img src="collection-1.png" className={styles.followItem} />
+          <img src="collection-1.png" className={styles.followItem} />
+          <img src="collection-1.png" className={styles.followItem} />
+          <img src="collection-1.png" className={styles.followItem} />
+          <img src="collection-1.png" className={styles.followItem} />
         </div>
         <br></br>
         <div className={styles.followItems}>
-          <img src='collection-1.png' className={styles.followItem} />
-          <img src='collection-1.png' className={styles.followItem} />
-          <img src='collection-1.png' className={styles.followItem} />
-          <img src='collection-1.png' className={styles.followItem} />
-          <img src='collection-1.png' className={styles.followItem} />
+          <img src="collection-1.png" className={styles.followItem} />
+          <img src="collection-1.png" className={styles.followItem} />
+          <img src="collection-1.png" className={styles.followItem} />
+          <img src="collection-1.png" className={styles.followItem} />
+          <img src="collection-1.png" className={styles.followItem} />
         </div>
       </div>
     </div>
