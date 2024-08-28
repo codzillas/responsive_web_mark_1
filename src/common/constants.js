@@ -1,0 +1,1 @@
+export const BANNER_STYLES = { style1: "style1", style2: "style2" };

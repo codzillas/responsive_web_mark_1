@@ -6,16 +6,25 @@ function Header(props) {
   return (
     <header className={styles.header}>
       <div className={styles.siteLogoContainer}>
-        <img className={styles.siteLogo} src="/logo.svg" alt="dressmart" />
+        <Image className={styles.siteLogo} src="/logo.svg" width="149" height="30" alt="dressmart" />
       </div>
       <div className={styles.navContainer}>
-        <nav className={styles.nav}>
+        <div className={styles.navItems}>
           <a>New</a>
+        </div>
+        <div className={styles.navItems}>
           <a>Dresses</a>
+        </div>
+        <div className={styles.navItems}>
           <a>Clothing</a>
+        </div>
+        <div className={styles.navItems}>
           <a>Accessories</a>
+        </div>
+
+        <div className={styles.navItems}>
           <a>Sale</a>
-        </nav>
+        </div>
       </div>
       <div className={styles.headerButtons}>
         <div className={styles.login}>
