@@ -1,0 +1,17 @@
+.socialIconContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-flow: column;
+    .appStoreLogo{
+width: 112px;
+height: 39px;
+margin: 0 0 1rem 0;
+    }
+    .socialIcons{
+width: 230px;
+height: 30px;
+    }
+}

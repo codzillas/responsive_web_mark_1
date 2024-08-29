@@ -1,13 +1,41 @@
 import styles from "./Collection.module.scss";
+import Image from "next/image";
 
-function CollectionSection({ src }) {
+function CollectionSection({ image1, image2 }) {
   return (
-    <div>
-      <div className={styles.collectionItem}>
-        <img src={src} style={{ height: "100%", width: "100%" }} />
+    <div className={styles.collectionImageWithDescription}>
+      <div className={styles.leftSideCollection}>
+        <img
+          src={image1}
+          className={styles.collectionImage}
+          alt="Image description"
+        />
+        <div>
+          <div
+            className={`${styles.collectionDescriptionTitle} .collectionHeadingFont`}
+          >
+            <p>Spring Dresses</p>
+          </div>
+          <div className={styles.collectionDescription}>
+            <p>Now Blooming : Springtime shades and prints</p>
+          </div>
+        </div>
       </div>
-      <p>Spring Dresses</p>
-      <p>Now Blooming : Springtime shades and prints</p>
+      <div className={styles.rightSideCollection}>
+        <img
+          src={image2}
+          className={styles.collectionImage}
+          alt="Image description"
+        />
+        <div>
+          <div className={styles.collectionDescriptionTitle}>
+            <p>Spring Dresses</p>
+          </div>
+          <div className={styles.collectionDescription}>
+            <p>Now Blooming : Springtime shades and prints</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

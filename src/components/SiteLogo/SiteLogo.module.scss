@@ -1,0 +1,10 @@
+.siteLogoContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  .siteLogo {
+    width: 149px;
+    height: 30px;
+  }
+}

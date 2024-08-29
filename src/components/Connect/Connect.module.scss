@@ -1,19 +1,59 @@
-.connectWith {
-  font-size: 2rem;
-  text-align: center;
-  text-transform: uppercase;
-  margin: 2rem 0;
+.connectContainer {
+  background-color: black;
+  padding: 2rem 0 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column;
+  border-bottom: .2rem solid #FFFF;;
+  .sectionHeaderContainer {
+    padding: 0 0 2rem 0;
+    .connectWith{
+      font-size: 28px;
+      text-align: center;
+      text-transform: uppercase;
+      box-sizing: border-box;
+      font-weight: 400;
+    }
+  }
+  .socialMedias {
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0 2rem 0;
+    justify-content: space-around;
+  }
 }
-.socialMedias {
+
+.instaSectionContainer {
+  background-color: #3f3d3d;
+  padding-top: 1rem;
   display: flex;
   justify-content: space-around;
-  padding: 1.5rem 0;
-}
-.followItems {
-  display: flex;
-  justify-content: space-around;
-  .followItem {
-    width: 10rem;
-    height: 10rem;
+  flex-flow: column;
+  box-sizing: border-box;
+  .followItemsContainer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    padding: 1rem;
+    margin: 0 2rem 0 2rem;
+
+    .followItem {
+      height: 15rem;
+      width: 14rem;
+    }
+  }
+  .title {
+    font-size: 24px;
+    font-weight: normal;
+  }
+  .subTitle {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  .textDirection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0 2rem 0;
   }
 }

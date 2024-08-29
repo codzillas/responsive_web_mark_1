@@ -1,11 +1,12 @@
 .footerContainer {
-  p {
-    text-align: center;
-  }
-
+  padding: 1rem;
   background-color: #3f3d3d;
   height: auto;
   width: 100%;
+  p {
+    text-align: center;
+    font-size: 18px;
+  }
   .topSection {
     display: flex;
     justify-content: center;
@@ -16,11 +17,17 @@
     justify-content: space-around;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    .centerSection {
+      p {
+        font-size: 18px;
+      }
+    }
   }
 }
 .links {
   display: flex;
   flex-direction: column;
+  text-align: left;
   a {
     color: white;
   }
@@ -29,21 +36,54 @@
   background-color: white;
   display: flex;
   justify-content: flex-end;
-  width: 20rem;
+  width: 22rem;
   margin-left: 5rem;
-  height: 32px;
+  height: 31px;
 }
 .submitButton {
   background-color: black;
   color: white;
   padding: 0 33px;
-  margin: 3px;
+  margin: 2px;
+  font-size: 18px;
 }
-
+.lowerMidSection {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* margin-top: 4rem; */
+  padding: 0 10rem 0.5rem 10rem;
+  flex-flow: column;
+  .availableCountrySection {
+    align-items: center;
+    width: 62rem;
+    color: white;
+    font-size: 18px;
+    margin: 0 0 1rem 0;
+    border-bottom: 0.2rem solid white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-flow: column;
+    .availableCountryImage {
+      width: 590px;
+      height: 65px;
+      padding: 1rem 0 0 0;
+      align-content: center;
+    }
+  }
+  .SocialIconsSection {
+    color: white;
+    margin-bottom: 4rem;
+  }
+}
 .logoContainer {
   width: 100%;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   .logoImg {
     width: 149px;
     height: 30px;

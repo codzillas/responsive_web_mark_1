@@ -2,10 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Audiowide&family=Dancing+Script:wght@400..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
   font-family: raleway;
-  font-weight: lighter;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
   margin: 0;
   padding: 0;
   background-color: #f0f0f0;
@@ -18,4 +22,12 @@ body {
 
 p {
   color: white;
+}
+
+.collectionHeadingFont {
+  font-family: "Dancing Script", cursive;
+}
+
+.connectWithTitle {
+  font-family: "Autowide";
 }

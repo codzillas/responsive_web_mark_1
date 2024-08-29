@@ -1,9 +1,51 @@
+"use client";
+import { useEffect } from "react";
+import { gsap } from "gsap";
 import { BANNER_STYLES } from "@/common/constants";
 import styles from "./Banner.module.scss";
 import Image from "next/image";
 
 function Banner(props) {
-  const { style, src,text } = props;
+  const { style, src, text } = props;
+
+  useEffect(() => {
+    gsap.set(".topText", { y: -150 });
+    gsap.set(".leftMidText", { x: -150 });
+    gsap.set(".leftBottomText", { x: -150 });
+    gsap.set(".rightBottomText", { x: 150 });
+
+    const animateTexts = () => {
+      gsap.to(".topText", {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power2.out",
+      });
+      gsap.to(".leftMidText", {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: "power2.out",
+        // delay: 0.2,
+      });
+      gsap.to(".leftBottomText", {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: "power2.out",
+        // delay: 0.4,
+      });
+      gsap.to(".rightBottomText", {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: "power2.out",
+        // delay: 0.6,
+      });
+    };
+    animateTexts();
+  }, []);
+
   if (style === BANNER_STYLES.style1) {
     return (
       <div className={styles.style1BannerContainer}>
@@ -14,10 +56,10 @@ function Banner(props) {
           objectFit="cover"
           alt="main-banner"
         />
-        <div className={styles.text1}>
+        <div className={`${styles.subText} topText`}>
           <p>{text}</p>
         </div>
-        <div className={styles.text2}>
+        <div className={`${styles.middleMainText} leftMidText`}>
           <div>
             <p>RITE</p>
           </div>
@@ -29,13 +71,16 @@ function Banner(props) {
           </div>
         </div>
         <div>
-          <div className={styles.leftCategory}>Tank Top - White</div>
-          <div className={styles.rightCategory}>Shop New Arrivals</div>
+          <div className={`${styles.leftCategoryText} leftBottomText`}>
+            Tank Top - White
+          </div>
+          <div className={`${styles.rightCategoryText} rightBottomText`}>
+            Shop New Arrivals
+          </div>
         </div>
       </div>
     );
-  }
-  else if (style === BANNER_STYLES.style2) {
+  } else if (style === BANNER_STYLES.style2) {
     return (
       <div className={styles.style2BannerContainer}>
         <Image
@@ -45,7 +90,7 @@ function Banner(props) {
           objectFit="cover"
           alt="main-banner"
         />
-        <div className={styles.style2Text1}>
+        <div className={`${styles.style2MainText} leftMidText`}>
           <p>{text}</p>
         </div>
       </div>

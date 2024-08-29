@@ -1,21 +1,53 @@
 .collectionContainer {
   background-color: black;
   width: 100%;
+  height: 100%;
+  padding: 5rem 5rem 5rem 5rem;
+  display: flex;
+  flex-flow: column;
+  box-sizing: border-box;
 
   .collectionHeadingContainer {
-    margin-left: 7%;
-    padding: 14px 0px;
-    font-size: 20px;
+    width: 100%;
+    font-size: 28px;
+    text-align: justify;
+    margin-left: 5rem;
+    font-family: "Dancing Script",cursive;
   }
-  .collectionItems {
+  .collectionImageWithDescription {
+    width: 100%;
+    height: 100vh;
+    flex-flow: row;
     display: flex;
     justify-content: space-around;
-    padding-bottom: 2rem;
-    .collectionItem {
-      background-color: orange;
-      width: 35rem;
+    padding-top: 1rem;
+    .leftSideCollection {
+      width: 30rem;
+      height: 100vh;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-around;
+    }
+    .rightSideCollection {
+      width: 30rem;
+      height: 100vh;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-around;
+    }
+    .collectionImage {
+      width: 30rem;
       height: 85vh;
-      margin-bottom: 2rem;
+    }
+    .collectionDescriptionTitle {
+      font-weight: bold;
+      font-size: 20px;
+      overflow: hidden;
+    }
+    .collectionDescription {
+      font-weight: 100;
+      font-size: 18px;
+      overflow: hidden;
     }
   }
 }
